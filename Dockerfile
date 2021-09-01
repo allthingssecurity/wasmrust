@@ -10,4 +10,4 @@ COPY . .
 # We'll use the release profile to make it faaaast
 RUN cargo build --release
 # When `docker run` is executed, launch the binary!
-ENTRYPOINT ["./target/release/testwasm", "bindgen_demo.wasm"]
+ENTRYPOINT ["./target/release/cuckoo_http", "cuckoo_http.wasm"]
